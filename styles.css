@@ -1,0 +1,103 @@
+*{
+	box-sizing: border-box;
+}
+
+p{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+#subscription-plan{
+	display: flex;
+	margin: 50px auto;
+	width: 960px;
+	height: 700px;
+	border-radius: 10px;
+	background-color: white;
+	overflow: hidden;
+	text-align: center;
+}
+.column{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.cell{
+	padding: 1em;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 5%;
+	display: flex;
+	align-items: center;
+}
+
+#plans-column > .cell.header,
+#starter-column > .cell,
+#econom-column > .cell,
+#standart-column > .cell,
+#professional-column > .cell{    
+	justify-content: center;
+}
+
+.cell.header{
+	background-color: rgb(77, 133, 82);
+	font-size: 18px;
+	font-weight: 800;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	min-height: 120px;
+}
+
+.cell.header#starter{
+	background-color: rgb(54, 126, 58);
+}
+
+.cell.header#econom{
+	background-color: rgb(23, 102, 29);
+}
+
+.cell.header#standart{
+	background-color: rgb(6, 94, 13);
+}
+
+.cell.header#professional{
+	background-color: rgb(2, 65, 7);
+}
+
+.cell.header > .price{
+	font-size: 36px;
+	margin-top: 20px;
+}
+
+.dark{
+	background-color: rgb(211, 208, 208);
+}
+
+.dark > .dark{
+	background-color: rgb(167, 165, 165);
+}
+
+#plans-column{
+	flex-grow: 1.5;
+}
+
+#plans-column > .cell.header{
+	text-align: center;
+}
+
+#plans-column > .cell{
+	text-align: left;
+}
+
+.start{
+	padding: 15px;
+}
