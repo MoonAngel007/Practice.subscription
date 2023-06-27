@@ -31,8 +31,7 @@ firstTask.addEventListener('click', () => {
 	lim1=parseInt(prompt("Enter lim1:"));
 	lim2=parseInt(prompt("Enter lim2:"));
 
-	//checking whether user entered number
-	if(isNaN(lim1) || isNaN(lim1) || lim1>lim2){
+		if(isNaN(lim1) || isNaN(lim1) || lim1>lim2){
 			console.log("Wrong input. Try again.");
 			return;
 	}
@@ -53,7 +52,7 @@ secondTask.addEventListener('click', () => {
 	firstNumber=parseInt(prompt("Enter first number:"));
 	secondNumber=parseInt(prompt("Enter second number:"));
 
-	//checking whether user entered number
+
 	if(isNaN(firstNumber) || isNaN(secondNumber)){
 			console.log("Wrong input. Try again.");
 			return;
@@ -76,24 +75,23 @@ const thirdTask=document.querySelector("#third-task");
 thirdTask.addEventListener('click', () => {
 	console.log("Task 3:");
 
-	//array output
+	
 	console.log(`Array: ${array}`);
 
-	//3.2. Вивести розмір масива
+	
 	console.log(`Array length: ${array.length}`);
 
-	//3.3. Вивести елементи з парними індексами
+	
 	console.log("Elements with even index:");
 	for(let i=0; i < array.length; i+=2){
 			console.log(array[i]);
 	}
 
-	//3.4. Вивести тільки парні елементи
+	
 	console.log("Even elements:");
 	console.log(array.filter(element => element%2===0));
 
-	//3.5. Вивести індекси нульових елементів (елемент дорівнює нулю)
-	//3.6. Обчислити кількість нульових елементів
+	
 	let numberOfZeroElements=0;
 	console.log("Indexes of elements that equal zero:");
 	for(let i=0; i < array.length; i++){
@@ -113,14 +111,14 @@ thirdTask.addEventListener('click', () => {
 
 	//4. Створити об’єкт Машина та визначити для нього властивості.
 	let car = {
-			make: "Dodge",
-			model: "Challenger",
-			owner: "Vasya Pupkin",
+			make: "Ferrari",
+			model: "Enzo",
+			owner: "Jack Rassel",
 			year: 2013,
-			color: "grey",
-			engineCapacityLiters: 3.6,
-			maxSpeedKMPH: 293,
-			kilometersDriven: 124000,
+			color: "black",
+			engineCapacityLiters: 6.0,
+			maxSpeedKMPH: 360,
+			kilometersDriven: 240000,
 	}
 	
 
@@ -147,7 +145,7 @@ thirdTask.addEventListener('click', () => {
 	}
 
 	let myEBook= new EBook("Steven King", "The Jaunt", 1981,
-	 "Some random publisher", "pdf", "123457");
+	 "Some random publisher", "pdf", "1234");
 	
 
 	//5.2. Вивести об’єкти в консоль
